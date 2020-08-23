@@ -1,0 +1,370 @@
+/*Обнуление стилей*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 0.04em;
+    font-family: sans-serif;
+}
+@font-face{
+    font-family: 'VerbanaC_Montserrat';
+    src: url('Font-Styles/ofont.ru_Montserrat.ttf');
+    src: url('Font-Styles/ofont.ru_VerbenaC.ttf');
+    font-style: italic;
+    }
+.AppWrapper{
+    height: 100%;
+    min-width: 1220px;
+    background-color: white;
+}
+/*Стили для верхнего блока*/
+.Background{
+    height: 100%;
+    background:url(img/layer-1.png) no-repeat center / cover;
+}
+header{
+    width: 100%;
+    background: url(img/Top-Grid-Layer.png);
+}
+/*Стили для header_Top*/
+.Header_Top{
+    height: 236px;
+    margin: 0 300px;
+    padding-top: 5px;
+}
+.Header_Top_Wrapper{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+}
+.Header_Logo{
+    height: 155px;
+    width: 155px;
+}
+.Header_Contacts{
+    font-family: cursive;
+    font-size: 17px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.Header_Number{
+    color: red;
+    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Header_Email{
+    color: red;
+}
+.Header_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 165px;
+    min-width: 500px;
+    padding: 0 15px;
+}
+.Header_info_Text{
+    padding-left: 54px;
+    letter-spacing: 0.10em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 23px;
+}
+.Header_Contacts_Container_Logo{
+    margin-left: 7px;
+    margin-top: 13px;
+    min-width: 354px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Header_Contacts_Logo{
+    width: 30px;
+    height: 30px;
+}
+.Header_UrlButton{
+    transition: all 0.3s ease-out 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    width: 345px;
+    height: 55px;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #d87477;
+    color: white;
+}
+.Header_UrlButton:hover{
+    background-color: #df565d;
+}
+/*Стили для header_Bottom*/
+.Header_Bottom{
+    min-height: 75px;
+    max-height: 200px;
+    background-color: white;
+}
+.Header_Bottom_Wrapper{
+    margin-left: 410px;
+    margin-right: 410px;
+    min-width: 424px;
+    min-height: 75px;
+    flex-flow: wrap;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+.Header_Links{
+    transition: all 0.3s ease-out 0s;
+    display: block;
+    font-weight: bold;
+    padding: 25px 10px 25px 10px;
+}
+.Header_Links:hover{
+    background: #1088ce; 
+    color: #fff;;
+}
+/*Стили для Content*/
+.Content{
+    height: 610px;
+    margin: 0 160px;
+    margin-top: 55px;
+}
+.Content_Container{
+    display: flex;
+    justify-content: space-around;
+}
+.Content_Learn_Text{
+    text-transform: uppercase;
+    margin-top: 95px;
+    letter-spacing: 0.20em;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 19px;
+}
+.Content_Ul_Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Content_Ul_Text{
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    font-weight: bold;
+    font-size: 23px;
+    letter-spacing: 0.01em;
+}
+.Content_Action{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.Content_Action_Wrapper{
+    position: relative;
+    right: 140px;
+    top: 18px;
+    background-image: url(Img/Action.png);
+    width: 715px;
+    height: 340px;
+}
+.Content_Action_Container{
+    display: flex;
+    position: relative;
+    top: 80px;
+    line-height: 35px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    width: 400px;
+    height: 245px;
+}
+.Content_Action_Text{
+    font-size: 18px;
+    font-weight: bold;
+}
+.Content_Action_left25px{
+    position: relative;
+    left: 25px;
+}
+.Content_Action_Text_Caps{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.Content_Action_Text_Cost{
+    color: red;
+    font-size: 21px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Стили для OurServices*/
+.OurServices{
+    height: 1000px;
+    background-color: white;
+}
+.OurServices_Top{
+    text-align: center;
+    position: relative;
+    top: 35px;
+    height: 95px;
+}
+.OurServices_Wrapper{
+    height: 660px;
+    background: url(img/Our-services-layer.png);
+    position: relative;
+    padding-top: 44px;
+}
+.OurServices_Content{
+    margin: 0 160px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.OurServices_Block{
+    position: relative;
+    right: 225px;
+}
+.OurServices_Span_Text{
+    font-style: italic;
+    font-size: 45px;
+    color: #008fd2;
+}
+.OurServices_Span_Text2{
+    color: #e31e25;
+    font-size: 50px;
+    letter-spacing: 0em;
+    font-weight: bold;
+    font-family: cursive;
+}
+.OurServices_Span_Text3{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    font-size: 30px;
+}
+.OurServices_CategoryOfRights{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: space-around;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+.OurServices_CategoryOfRights img{
+    margin: 0 10px;
+}
+.OurServices_Container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.OurServices_Container li{
+    margin: 0 20px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.OurServices_Text{
+    border-bottom: solid 2px rgb(255, 87, 87);
+    font-size: 30px;
+    padding-right: 6px;
+    letter-spacing: 0.10em;
+}
+.OurService_Img{
+    position: relative;
+    top: 8px;
+}
+.OurServices_Container_Transport{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.OurServices_Container_Transport img{
+    margin: 0 10px;
+}
+.OurServices_StartTraining{
+    transition: all 0.3s ease-out 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    width: 310px;
+    height: 60px;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #df7f84;
+    color: white;
+}
+.OurServices_StartTraining:hover{
+    background-color: #e6545c;
+}
+.OurServices_RedText{
+    margin-top: 35px;
+    color: red;
+    font-family: VerbanaC_Montserrat;
+    font-size: 27px;
+}
+.OurServices_Bottom{
+    margin: 0 160px;
+    height: 250px;
+}
+.OurServices_Bottom_Wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    position: relative;
+    top: 40px;
+}
+.OurServices_Bottom_Wrapper div{
+    font-size: 17px;
+    width: 200px;
+    height: 185px;
+    text-align: center;
+}
+.OurServices_Bottom_Text{
+    list-style-type: disc;
+}
+/*Стили для OnNote*/
+.OnNote{
+    height: 710px;
+    margin: 0 160px;
+}
+.OnNote_Top{
+    position: relative;
+    top: 35px;
+    text-align: center;
+    height: 130px;
+}
+.OnNote_Wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+}
+.OnNote_Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.OnNote_TextAlignCenter{
+    text-align: center;
+    font-size: 21px;
+}
+.OnNote_Contacts_Logo{
+    font-size: 21px;
+}
+/*Стили для Footer*/
+/*Медиа-запросы*/
+@media(max-width: 1337px){
+.Background{
+    height:1135px ;
+}
+.Content_Action_Wrapper{
+    right: 100px;
+}
+}
